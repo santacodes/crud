@@ -1,0 +1,31 @@
+﻿@model Empform.Models.Edit
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="text-center">
+	<h1 class="display-4">Employee Edit Form</h1>
+</div>
+
+
+<form method="post">
+	<div class="mb-3">
+		<label for="EmpIDInput" class="form-label">Employee ID</label>
+		<input type="text" class="form-control" id="EmpIDInput" aria-describedby="NameHelp" asp-for="EmpID">
+		<div id="NameHelp" class="form-text">Enter your Employee ID </div>
+	</div>
+	<div class="mb-3">
+		<label for="EmpNameInput" class="form-label">Employee Name</label>
+		<input type="text" class="form-control" id="EmpNameInput" aria-describedby="NameHelp" asp-for="EmpName">
+		<div id="NameHelp" class="form-text">Enter your Name. </div>
+	</div>
+	<div class="mb-3">
+		<label for="EmpEmailInput" class="form-label">Email address</label>
+		<input type="email" class="form-control" id="EmpEmailInput" aria-describedby="EmailHelp" asp-for="EmpEmail">
+		<div id="EmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+	</div>
+	<button type="submit" class="btn btn-primary">Edit and Update</button>
+</form>
